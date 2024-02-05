@@ -1,0 +1,1 @@
+I have completed this Beginner Javascipt course form scaler with certification, you can see my certificate on Linkedin.
