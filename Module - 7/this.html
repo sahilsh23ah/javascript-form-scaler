@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- This keyword on browser  -->
+
+    <script>
+
+        // non - strict mode 
+
+        // console.log(this);
+
+
+        //     2
+        // function displaythis(){
+        //     console.log(this);
+        // }
+        // displaythis();
+        // output will be window object
+
+
+        //    3
+        // let obj = {
+        //     name: 'piter',
+        //     age: 20,
+        //     myFn:function(){
+        //         console.log(this);
+        //     }
+        // }
+        // obj.myFn()
+        // output will be this obj itself
+
+
+        //    4
+        // obj inside function inside function again it will through window obj
+
+        //  let obj = {
+        //         name: 'piter',
+        //         age: 20,
+        //         myFn:function(){
+        //             function myFn2(){
+        //                 console.log(this);
+        //             }
+        //             myFn2()
+        //         }
+        //     }
+        //     obj.myFn()
+
+
+
+
+        'use strict'
+
+        
+        // console.log(this);
+
+
+        //     2
+        // function displaythis(){
+        //     console.log(this);
+        // }
+        // displaythis();
+        // output will be undefined
+
+
+
+         //    3
+        // let obj = {
+        //     name: 'piter',
+        //     age: 20,
+        //     myFn:function(){
+        //         console.log(this);
+        //     }
+        // }
+        // obj.myFn()
+        // output will be this obj itself
+
+
+          //    4
+        // obj inside function inside function again it will through undefined
+
+        //  let obj = {
+        //         name: 'piter',
+        //         age: 20,
+        //         myFn:function(){
+        //             function myFn2(){
+        //                 console.log(this);
+        //             }
+        //             myFn2()
+        //         }
+        //     }
+        //     obj.myFn()
+
+
+    </script>
+</body>
+
+</html>

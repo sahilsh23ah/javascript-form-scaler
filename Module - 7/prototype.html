@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Prototype in js</title>
+</head>
+
+<body>
+
+
+
+    <script>
+        let myObj = {}
+        console.log(myObj);
+
+
+        // let person = {
+        //     name:'Adam',
+        //     age:40
+        // }
+        // console.log(person);
+        // console.log(person.hasOwnProperty('age'));
+
+
+        // constructor function 
+        function person(_name, _age) {
+            this.name = _name
+            this.age = _age
+        }
+        person.prototype.getNameAndage = () => {
+            console.log(`My name is ${this.name} and age is ${this.age}`);
+        }
+
+        let person1 = new person('Adam', 20);
+        let person2 = new person('Mark', 55);
+        console.log(person1);
+        console.log(person2);
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
